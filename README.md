@@ -11,6 +11,10 @@ Build an image for our build-environment:
 Enter build environment:
  - Windows (PowerShell): `docker run --rm -it -v "${pwd}:/root/env" myos-buildenv`
 
+## Run QEMU
+
+- Windows (PowerShell): `qemu-system-x86_64 -L "C:/Program Files/qemu/" -cdrom dist/x86_64/kernel.iso`
+
 ## Cleanup
 
 Remove the build-evironment image:
